@@ -10,6 +10,7 @@ class Player:
         self.weapon = weapon
         self.armor = armor
         print(f"Created player {self.name} with skill {self.skill} and stamina {self.stamina}")
+        print(f"Armed with {self.weapon.__name__}, and armored with {self.armor.__name__}")
 
     def isDead(self):
         return self.stamina <= 0
